@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Menu de Navigation */
+header{
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+}
+
+header>nav{
+    width: 100vw;
+    border-width: 1.5px;
+    background-color: #5499c7;
+    height: 5rem;
+    text-align: center;
+}
+
+header>nav>div>a>h1{
+    font-family: 'Cookie';
+    font-size: 3rem;
+    color: black;
+    float: left;
+    margin-top: 1rem;
+}
+
+header>nav>div>a{
+    text-decoration: none;
+}
+
+header>nav>div>a>img{
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+header>nav>div>a>button{
+    background-color: #75BCC6;
+    height: 3rem;
+    width: auto;
+    margin: 1px;
+    border: 1px black;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+header>nav>div>a>button:hover{
+    background-color: #77ABC6;
+}
+
+@media screen and (max-width:684px){
+    header>nav{
+        height: 10rem;
+    }
+    header>nav>div>a>img{
+        margin-top: 2rem;
+    }
+    header>nav>div>a>h1{
+        margin-top: 3.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+main{
+    position: absolute;
+    width: 100vw;
+}
+
+/* Corps du site */
+
+section.corps{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background: url(../images/fond.png);
+    height: 700px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+section>form{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+section>form>fieldset{
+    border-radius: 2px;
+    border: solid #5499c7 2px
+}
+
+section>form>fieldset>legend{
+    font-family: 'Cookie', sans-serif;
+    font-size: 4rem;
+    color: #5499c7;
+    background: url(../images/fondblanc2.png);
+}
+
+section>form>fieldset>div{
+    margin-top: 0.25rem;
+}
+
+section>form>fieldset>div>input{
+    background-color: #75BCC6;
+    color: white;
+    height: 25px;
+    width: 300px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+}
+
+::-webkit-input-placeholder{/* WebKit browsers */
+    color: white;
+    opacity: 1;
+}
+
+section>form>fieldset>div>textarea{
+    background-color: #75BCC6;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    color: white;
+    height: 300px;
+    width: 600px;
+}
+
+section>form>fieldset>div>button{
+    background-color: #75BCC6;
+    border: 1px black solid;
+    font-weight: bolder;
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width:720px){
+    section>form{
+        margin-top: 4rem;
+    }
+    section>form>fieldset>div>textarea{
+        height: 250px;
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-height:900px){
+    section>form>fieldset>div>textarea{
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-height:850px){
+    section>form>fieldset>div>textarea{
+        height: 150px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-height:805px){
+    section>form>fieldset>div>textarea{
+        height: 100px;
+        width: 400px;
+    }
+}
+
+/* Footer */
+
+footer{
+    height: 150px;
+    background-color: #5499c7;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+footer>div.Lien{
+    text-align: center;
+}
+
+footer>div.Lien>a+p{
+    display: inline-block;
+    text-align: center;
+    margin-left: 0.75rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+footer>div.Reseau{
+    text-align: center;
+}
+
+footer>div.Reseau>a{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
